@@ -1,1 +1,71 @@
 
+Funciones en R
+
+una función viene a ser como variables o secuencias establecidas que nos permiten configurarlas para almacenarles valores u operaciones individulaes y usarlos de manera continua sin necesidad de volver a configurarlas. Se componen de entradas y salidas. 
+
+se utiliza el comando function ()
+
+estructura de una función
+
+Nombre de la funcion + signo de asignacion o igual + parametro "function" + parentesis (parametros de la función dentro del parentesis)
+
+NombreFuncion = function (variable1, variable 2)
+{
+contenido de la funcion
+operaciones internas
+
+resultado **en la penultima linea**
+return (para entregar un resultado, en este caso de) **en la ultima linea**
+}
+
+ejemplo de una función
+```{r}
+mi_funcion = function (a, b){
+r1= a + b
+r2= min(c(a, b))
+resul<- list(sum=r, min=r2)
+return(resul)
+}
+
+
+```
+
+```{r}
+suma = function(x,y)
+{
+  resultado=x+y
+  return(resultado)
+  
+  
+}
+```
+
+
+```{r}
+suma(x=1,y=1)
+```
+
+
+
+
+ 
+Argumentos de una función
+son los valores que se colocan para realizar la funcion, que van cambiando de acuerdo a las llamadas que se le hagan a la funcion.
+
+```{r}
+suma(1,1)
+```
+
+
+
+Argumentos por valor
+
+
+
+● Familia apply
+○ lapply
+○ Uso de lapply con funciones (ejemplos)
+○ sapply
+○ Uso de sapply con funciones (ejemplos)
+○ vapply
+○ Uso de vapply con funciones (ejemplos)
