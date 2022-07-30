@@ -1,11 +1,11 @@
 
-Funciones en R
+***Funciones en R
 
 una función viene a ser como variables o secuencias establecidas que nos permiten configurarlas para almacenarles valores u operaciones individulaes y usarlos de manera continua sin necesidad de volver a configurarlas. Se componen de entradas y salidas. 
 
 se utiliza el comando function ()
 
-estructura de una función
+***estructura de una función
 
 Nombre de la funcion + signo de asignacion o igual + parametro "function" + parentesis (parametros de la función dentro del parentesis)
 
@@ -45,21 +45,20 @@ suma = function(x,y)
 suma(x=1,y=1)
 ```
 
-
-
-
- 
 Argumentos de una función
-son los valores que se colocan para realizar la funcion, que van cambiando de acuerdo a las llamadas que se le hagan a la funcion.
+
+sirven para ingresar la información que se utilizara en el proceso de la función. 
+Los argumentos pueden estar sin valores o vacios y para que el usuario ingrese valores.
+tambien se les puede asignar un valor inicial
+si el usuario no ingresa un valor, la función usará el valor inicial. Una función puede tener o no argumentos de entrada, 
+
 
 ```{r}
 suma(1,1)
 ```
 
-
-
 Argumentos por valor
-
+son los valores que se colocan para realizar la funcion, que van cambiando de acuerdo a las llamadas que se le hagan a la funcion.
 
 
 ● Familia apply
