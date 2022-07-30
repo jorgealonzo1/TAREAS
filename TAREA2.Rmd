@@ -62,9 +62,84 @@ son los valores que se colocan para realizar la funcion, que van cambiando de ac
 
 
 ● Familia apply
+
+
+Apply sirve para acomodar los datos y manejar los datos de una manera mas organizada y mas rapida de data frame o matriz. 
+sustituye la función de los (for)
+mtcars
+```{r}
+mtcars
+
+
+
+```
+```{r}
+mi_matriz = matrix(1:9, nrow = 3, ncol =3)
+mi_matriz
+```
+```{r}
+apply(mi_matriz,2,mean)
+```
+```{r}
+apply(mi_matriz,1,mean)
+```
 ○ lapply
 ○ Uso de lapply con funciones (ejemplos)
+en lugar de recibir un dataframe o matriz, recibe listas y de resultado regresa otra lista.
+
+```{r}
+l =list(a=1:10,b=11:20)
+
+lapply(l,mean)
+
+lapply(l,sum)
+```
+
+```{r}
+class(lapply(l,sum))
+```
+
+
 ○ sapply
 ○ Uso de sapply con funciones (ejemplos)
-○ vapply
-○ Uso de vapply con funciones (ejemplos)
+recibe listas y trabaja con listas, pero el resultado es un vector o matriz.
+
+```{r}
+s =list(a=1:10,b=11:20)
+
+sapply(s,mean)
+
+```
+
+Tapply 
+hace operaciones sobre grupos, 
+
+```{r}
+tapply(mtcars$mpg,mtcars$cyl,mean)
+```
+
+```{r}
+tapply(mtcars$mpg, mtcars$cyl,mean)
+```
+
+mapply
+
+
+
+```{r}
+mapply(function(x,y){x*y},x=5,y=20)
+```
+
+```{r}
+mapply(summary,mtcars)
+```
+
+```{r}
+summary (mtcars)
+```
+
+
+
+
+
+
